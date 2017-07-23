@@ -60,6 +60,8 @@ fi
 # Miscellaneous
 # -------------------------------------------------------------------
 alias h='history'
+alias otp='~/code/scripts-Bash/otp.sh'
+
 if [[ $IS_MAC -eq 1 ]]; then
   alias m='tail -f -n 200 /var/log/system.log'
 else
