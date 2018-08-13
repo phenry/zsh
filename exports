@@ -34,6 +34,7 @@ export LC_COLLATE=C
 export COPYFILE_DISABLE=true
 
 
+if [[ $IS_MAC -eq 1 ]]; then
 # Python
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
@@ -43,14 +44,19 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 #export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # disable shell prompt indicating which Python virtualenv is currently active
 #export VIRTUAL_ENV_DISABLE_PROMPT=true
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 export WORKON_HOME=~/virtualenvs
 [ -s /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 
 # Ansible
 ANSIBLE_ROLES_PATH=$HOME/code/ansible-roles
 
+# Go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 
 # Homebrew
 # https://github.com/niksy/dotfiles/issues/28
