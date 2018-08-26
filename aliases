@@ -67,3 +67,12 @@ if [[ $IS_MAC -eq 1 ]]; then
 else
   alias m='tail -f -n 200 /var/log/messages'
 fi
+
+
+
+# Move export GREP_OPTIONS="--color=auto" (which is deprecated) from .exports to .alias
+# Always enable colored `grep` output`
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+

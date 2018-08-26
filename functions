@@ -116,3 +116,9 @@ givedef() {
     curl "dict://dict.org/d:$1"
   fi
 }
+
+
+
+# https://www.gitignore.io/docs
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
