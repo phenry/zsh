@@ -76,3 +76,7 @@ alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
+
+# Ledger pass
+alias ldgpass='PASSWORD_STORE_DIR=~/.ledger-password-store pass'
+
